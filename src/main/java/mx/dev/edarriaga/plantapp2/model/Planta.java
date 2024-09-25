@@ -26,11 +26,11 @@ public class Planta {
 
     @ManyToOne
     @JoinColumn (name = "jardinero_id", nullable = false)
-    @ToString.Exclude
+    @ToString.Exclude // solucion loop infiniro loombook
     private Jardinero jardinero;
 
     @ManyToMany
-    @JoinTable(name = "planta_prospecto",
+    @JoinTable(name = "Planta_Prospecto",
         joinColumns = @JoinColumn(name = "planta_id"),
         inverseJoinColumns = @JoinColumn(name = "prospecto_id")
     )
