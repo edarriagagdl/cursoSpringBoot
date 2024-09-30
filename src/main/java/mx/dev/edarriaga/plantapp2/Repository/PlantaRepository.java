@@ -18,7 +18,7 @@ public interface PlantaRepository extends JpaRepository<Planta, Long> {
     List<Planta> findByJardinero(Long idJardinero);
 
     @Query("SELECT p FROM Planta p order by lower(p.especie) asc")
-    List<Planta> findAllByOrderEspecieIgnoreCaseAsc(String especie);
+    List<Planta> findAllByOrderEspecieIgnoreCaseAsc();
 
     void deleteByJardinero(Jardinero jardinero);
 

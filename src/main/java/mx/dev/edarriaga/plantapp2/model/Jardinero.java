@@ -2,6 +2,7 @@ package mx.dev.edarriaga.plantapp2.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,6 +12,7 @@ import java.util.List;
 @Data // toString, equals, hashCode, getters, setters
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Jardinero {
     @Id
     @GeneratedValue

@@ -1,10 +1,7 @@
 package mx.dev.edarriaga.plantapp2.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -13,6 +10,7 @@ import java.util.List;
 @Data // toString, equals, hashCode, getters, setters
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class Planta {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
@@ -34,5 +32,6 @@ public class Planta {
         joinColumns = @JoinColumn(name = "planta_id"),
         inverseJoinColumns = @JoinColumn(name = "prospecto_id")
     )
+
     private List<Prospecto> prospectosAsociados;
 }
