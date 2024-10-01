@@ -12,7 +12,7 @@ import java.util.List;
 @Repository
 public interface PlantaRepository extends JpaRepository<Planta, Long> {
 
-    Optional<Planta> findEspecie(String especie);
+    Optional<Planta> findByEspecie(String especie);
 
     @Query("SELECT p FROM Planta p WHERE p.jardinero.id = :idJardinero")
     List<Planta> findByJardinero(Long idJardinero);

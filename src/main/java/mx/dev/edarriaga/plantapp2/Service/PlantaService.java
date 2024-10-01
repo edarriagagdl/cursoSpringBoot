@@ -58,7 +58,7 @@ public class PlantaService {
         Planta.PlantaBuilder plantaBuilder = Planta.builder();
         plantaOptional.ifPresent(plantaExistente -> {
                     plantaBuilder
-                            .id(plantaActualizada.getId())
+                            .id(plantaExistente.getId())
                             .colorHojas(plantaActualizada.getColorHojas())
                             .especie(plantaActualizada.getEspecie())
                             .fechaPlantacion(plantaActualizada.getFechaPlantacion())

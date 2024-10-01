@@ -15,7 +15,7 @@ import java.util.List;
 public class Prospecto {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue (strategy=GenerationType.IDENTITY)
     private Long id;
     private String nombre; // Por ejemplo tierra, fertilizante, etc.
     private Double cantidad; // Por ejemplo 10 kg, 5 litros, etc.

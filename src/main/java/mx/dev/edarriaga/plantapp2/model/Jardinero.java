@@ -15,7 +15,7 @@ import java.util.List;
 @Builder
 public class Jardinero {
     @Id
-    @GeneratedValue
+    @GeneratedValue (strategy=GenerationType.IDENTITY)
     private Long id;
     private String nombre;
     private String especialidad;
