@@ -1,6 +1,6 @@
 package mx.dev.edarriaga.plantapp2;
 
-import mx.dev.edarriaga.plantapp2.Service.ProspectoService;
+import mx.dev.edarriaga.plantapp2.service.ProspectoService;
 import mx.dev.edarriaga.plantapp2.model.Prospecto;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

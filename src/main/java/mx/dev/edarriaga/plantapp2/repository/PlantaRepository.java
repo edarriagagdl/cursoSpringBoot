@@ -1,4 +1,4 @@
-package mx.dev.edarriaga.plantapp2.Repository;
+package mx.dev.edarriaga.plantapp2.repository;
 import mx.dev.edarriaga.plantapp2.model.Jardinero;
 import mx.dev.edarriaga.plantapp2.model.Planta;
 

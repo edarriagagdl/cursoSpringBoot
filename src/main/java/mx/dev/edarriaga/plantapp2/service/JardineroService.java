@@ -1,7 +1,7 @@
-package mx.dev.edarriaga.plantapp2.Service;
+package mx.dev.edarriaga.plantapp2.service;
 
 import lombok.AllArgsConstructor;
-import mx.dev.edarriaga.plantapp2.Repository.JardineroRepository;
+import mx.dev.edarriaga.plantapp2.repository.JardineroRepository;
 import mx.dev.edarriaga.plantapp2.model.Jardinero;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
 package mx.dev.edarriaga.plantapp2;
 
-import mx.dev.edarriaga.plantapp2.Service.JardineroService;
+import mx.dev.edarriaga.plantapp2.service.JardineroService;
 import mx.dev.edarriaga.plantapp2.model.Jardinero;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
